@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{DACDFE06-2DEF-99F2-F1FE-A6E889DB09BB}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_1_2;UNITY_4_1;ENABLE_PROFILER;UNITY_EDITOR;UNITY_TEAM_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\Valion\Log\ValionLog.cs" />
+     <Compile Include="Assets\Plugins\Valion\Log\ValionLogAppender.cs" />
+     <Compile Include="Assets\Plugins\Valion\Log\ValionLogWindow.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\AnsiColorTerminalAppender.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\AppenderCollection.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\AppenderSkeleton.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\BufferingAppenderSkeleton.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\BufferingForwardingAppender.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\ColoredConsoleAppender.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\ConsoleAppender.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\DebugAppender.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\EventLogAppender.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\FileAppender.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\ForwardingAppender.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\IAppender.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\IBulkAppender.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\LocalSyslogAppender.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\MemoryAppender.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\NetSendAppender.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\OutputDebugStringAppender.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\RemoteSyslogAppender.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\RemotingAppender.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\RollingFileAppender.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\SmtpPickupDirAppender.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\TelnetAppender.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\TextWriterAppender.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\TraceAppender.cs" />
+     <Compile Include="Assets\Plugins\log4net\Appender\UdpAppender.cs" />
+     <Compile Include="Assets\Plugins\log4net\Config\AliasDomainAttribute.cs" />
+     <Compile Include="Assets\Plugins\log4net\Config\AliasRepositoryAttribute.cs" />
+     <Compile Include="Assets\Plugins\log4net\Config\BasicConfigurator.cs" />
+     <Compile Include="Assets\Plugins\log4net\Config\ConfiguratorAttribute.cs" />
+     <Compile Include="Assets\Plugins\log4net\Config\DOMConfigurator.cs" />
+     <Compile Include="Assets\Plugins\log4net\Config\DOMConfiguratorAttribute.cs" />
+     <Compile Include="Assets\Plugins\log4net\Config\DomainAttribute.cs" />
+     <Compile Include="Assets\Plugins\log4net\Config\Log4NetConfigurationSectionHandler.cs" />
+     <Compile Include="Assets\Plugins\log4net\Config\PluginAttribute.cs" />
+     <Compile Include="Assets\Plugins\log4net\Config\RepositoryAttribute.cs" />
+     <Compile Include="Assets\Plugins\log4net\Config\SecurityContextProviderAttribute.cs" />
+     <Compile Include="Assets\Plugins\log4net\Config\XmlConfigurator.cs" />
+     <Compile Include="Assets\Plugins\log4net\Config\XmlConfiguratorAttribute.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\CompactRepositorySelector.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\DefaultRepositorySelector.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\ErrorCode.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\ExceptionEvaluator.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\IAppenderAttachable.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\IErrorHandler.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\IFixingRequired.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\ILogger.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\ILoggerWrapper.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\IOptionHandler.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\IRepositorySelector.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\ITriggeringEventEvaluator.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\Level.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\LevelCollection.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\LevelEvaluator.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\LevelMap.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\LocationInfo.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\LogException.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\LogImpl.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\LoggerManager.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\LoggerWrapperImpl.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\LoggingEvent.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\SecurityContext.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\SecurityContextProvider.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\TimeEvaluator.cs" />
+     <Compile Include="Assets\Plugins\log4net\Core\WrapperMap.cs" />
+     <Compile Include="Assets\Plugins\log4net\DateFormatter\AbsoluteTimeDateFormatter.cs" />
+     <Compile Include="Assets\Plugins\log4net\DateFormatter\DateTimeDateFormatter.cs" />
+     <Compile Include="Assets\Plugins\log4net\DateFormatter\IDateFormatter.cs" />
+     <Compile Include="Assets\Plugins\log4net\DateFormatter\Iso8601DateFormatter.cs" />
+     <Compile Include="Assets\Plugins\log4net\DateFormatter\SimpleDateFormatter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Filter\DenyAllFilter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Filter\FilterDecision.cs" />
+     <Compile Include="Assets\Plugins\log4net\Filter\FilterSkeleton.cs" />
+     <Compile Include="Assets\Plugins\log4net\Filter\IFilter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Filter\LevelMatchFilter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Filter\LevelRangeFilter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Filter\LoggerMatchFilter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Filter\MdcFilter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Filter\NdcFilter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Filter\PropertyFilter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Filter\StringMatchFilter.cs" />
+     <Compile Include="Assets\Plugins\log4net\GlobalContext.cs" />
+     <Compile Include="Assets\Plugins\log4net\ILog.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\ExceptionLayout.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\ILayout.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\IRawLayout.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\Layout2RawLayoutAdapter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\LayoutSkeleton.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\Pattern\AppDomainPatternConverterLayout.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\Pattern\DatePatternConverterLayout.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\Pattern\ExceptionPatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\Pattern\FileLocationPatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\Pattern\FullLocationPatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\Pattern\IdentityPatternConverterLayout.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\Pattern\LevelPatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\Pattern\LineLocationPatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\Pattern\LoggerPatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\Pattern\MessagePatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\Pattern\MethodLocationPatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\Pattern\NamedPatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\Pattern\NdcPatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\Pattern\PatternLayoutConverterLayout.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\Pattern\PropertyPatternConverterLayout.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\Pattern\RelativeTimePatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\Pattern\StackTraceDetailPatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\Pattern\StackTracePatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\Pattern\ThreadPatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\Pattern\TypeNamePatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\Pattern\UserNamePatternConverterLayout.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\Pattern\UtcDatePatternConverterLayout.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\PatternLayout.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\RawLayoutConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\RawPropertyLayout.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\RawTimeStampLayout.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\RawUtcTimeStampLayout.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\SimpleLayout.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\XMLLayout.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\XMLLayoutBase.cs" />
+     <Compile Include="Assets\Plugins\log4net\Layout\XmlLayoutSchemaLog4j.cs" />
+     <Compile Include="Assets\Plugins\log4net\LogManager.cs" />
+     <Compile Include="Assets\Plugins\log4net\LogicalThreadContext.cs" />
+     <Compile Include="Assets\Plugins\log4net\MDC.cs" />
+     <Compile Include="Assets\Plugins\log4net\NDC.cs" />
+     <Compile Include="Assets\Plugins\log4net\ObjectRenderer\DefaultRenderer.cs" />
+     <Compile Include="Assets\Plugins\log4net\ObjectRenderer\IObjectRenderer.cs" />
+     <Compile Include="Assets\Plugins\log4net\ObjectRenderer\RendererMap.cs" />
+     <Compile Include="Assets\Plugins\log4net\Plugin\IPlugin.cs" />
+     <Compile Include="Assets\Plugins\log4net\Plugin\IPluginFactory.cs" />
+     <Compile Include="Assets\Plugins\log4net\Plugin\PluginCollection.cs" />
+     <Compile Include="Assets\Plugins\log4net\Plugin\PluginMap.cs" />
+     <Compile Include="Assets\Plugins\log4net\Plugin\PluginSkeleton.cs" />
+     <Compile Include="Assets\Plugins\log4net\Plugin\RemoteLoggingServerPlugin.cs" />
+     <Compile Include="Assets\Plugins\log4net\Repository\ConfigurationChangedEventArgs.cs" />
+     <Compile Include="Assets\Plugins\log4net\Repository\Hierarchy\DefaultLoggerFactory.cs" />
+     <Compile Include="Assets\Plugins\log4net\Repository\Hierarchy\Hierarchy.cs" />
+     <Compile Include="Assets\Plugins\log4net\Repository\Hierarchy\ILoggerFactory.cs" />
+     <Compile Include="Assets\Plugins\log4net\Repository\Hierarchy\Logger.cs" />
+     <Compile Include="Assets\Plugins\log4net\Repository\Hierarchy\LoggerKey.cs" />
+     <Compile Include="Assets\Plugins\log4net\Repository\Hierarchy\ProvisionNode.cs" />
+     <Compile Include="Assets\Plugins\log4net\Repository\Hierarchy\RootLogger.cs" />
+     <Compile Include="Assets\Plugins\log4net\Repository\Hierarchy\XmlHierarchyConfigurator.cs" />
+     <Compile Include="Assets\Plugins\log4net\Repository\IBasicRepositoryConfigurator.cs" />
+     <Compile Include="Assets\Plugins\log4net\Repository\ILoggerRepository.cs" />
+     <Compile Include="Assets\Plugins\log4net\Repository\IXmlRepositoryConfigurator.cs" />
+     <Compile Include="Assets\Plugins\log4net\Repository\LoggerRepositorySkeleton.cs" />
+     <Compile Include="Assets\Plugins\log4net\ThreadContext.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\AppenderAttachedImpl.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\CompositeProperties.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\ContextPropertiesBase.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\ConverterInfo.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\CountingQuietTextWriter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\CyclicBuffer.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\EmptyCollection.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\EmptyDictionary.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\FormattingInfo.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\GlobalContextProperties.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\LevelMapping.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\LevelMappingEntry.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\LogLog.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\LogicalThreadContextProperties.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\NativeError.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\NullDictionaryEnumerator.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\NullEnumerator.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\NullSecurityContext.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\OnlyOnceErrorHandler.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\OptionConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\PatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\PatternParser.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\PatternString.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\PatternStringConverters\AppDomainPatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\PatternStringConverters\DatePatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\PatternStringConverters\EnvironmentFolderPathPatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\PatternStringConverters\EnvironmentPatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\PatternStringConverters\IdentityPatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\PatternStringConverters\LiteralPatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\PatternStringConverters\NewLinePatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\PatternStringConverters\ProcessIdPatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\PatternStringConverters\PropertyPatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\PatternStringConverters\RandomStringPatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\PatternStringConverters\UserNamePatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\PatternStringConverters\UtcDatePatternConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\PropertiesDictionary.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\PropertyEntry.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\ProtectCloseTextWriter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\QuietTextWriter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\ReadOnlyPropertiesDictionary.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\ReaderWriterLock.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\ReusableStringWriter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\SystemInfo.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\SystemStringFormat.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\TextTransform.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\TextWriterAdapter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\ThreadContextProperties.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\ThreadContextStack.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\ThreadContextStacks.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\TypeConverters\BooleanConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\TypeConverters\ConversionNotSupportedException.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\TypeConverters\ConverterRegistry.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\TypeConverters\EncodingConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\TypeConverters\IConvertFrom.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\TypeConverters\IConvertTo.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\TypeConverters\IPAddressConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\TypeConverters\PatternLayoutConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\TypeConverters\PatternStringConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\TypeConverters\TypeConverter.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\TypeConverters\TypeConverterAttribute.cs" />
+     <Compile Include="Assets\Plugins\log4net\Util\WindowsSecurityContext.cs" />
+     <None Include="Assets\Plugins\Valion\Log\Resources\logging.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
